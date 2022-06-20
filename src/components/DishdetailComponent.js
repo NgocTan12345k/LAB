@@ -40,7 +40,7 @@ function RenderComments({ comments }) {
             );
         }
     }
-    const DishDetail = (props) => {
+    function DishDetail(props) {
         if (props.dish != null) {
             return (
                 <div className="container">
