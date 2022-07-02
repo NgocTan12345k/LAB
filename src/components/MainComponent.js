@@ -12,6 +12,7 @@ import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 import Contact from "./ContactComponent";
 import About from "./AboutComponent";
 import { connect } from "react-redux";
+import CommentForm from "./CommentForm";
 
 const mapStateToProps = state => {
     return {
