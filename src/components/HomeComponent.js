@@ -10,7 +10,7 @@ import {
 import { baseUrl } from "../shared/baseUrl";
 
 function RenderCard({ item }) {
-  return (
+  return item != null ? (
     <Card>
       <CardImg src={baseUrl + item.image} alt={item.name} />
       <CardBody>
@@ -21,7 +21,7 @@ function RenderCard({ item }) {
         <CardText>{item.description}</CardText>
       </CardBody>
     </Card>
-  );
+  ) : null;
 }
 
 function Home(props) {
